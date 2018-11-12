@@ -1,0 +1,7 @@
+# nyc test coverage
+.nyc_output
+
+.idea
+
+# Dependency directories
+node_modules/

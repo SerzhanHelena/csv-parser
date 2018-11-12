@@ -1,0 +1,1 @@
+{"version":3,"file":"date.js","sourceRoot":"","sources":["../../classes/date.ts"],"names":[],"mappings":";;AAAA;IAAA;IAIA,CAAC;IAAD,gBAAC;AAAD,CAAC,AAJD,IAIC;AAJY,8BAAS","sourcesContent":["export class DateOfReg {\n    year:number;\n    month:number;\n    day:number;\n}\n"]}
