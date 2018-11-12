@@ -1,1 +1,0 @@
-{"version":3,"file":"phone.js","sourceRoot":"","sources":["../../classes/phone.ts"],"names":[],"mappings":";;AAAA;IAAA;IAIA,CAAC;IAAD,YAAC;AAAD,CAAC,AAJD,IAIC;AAJY,sBAAK","sourcesContent":["export class Phone {\r\n    code1: string;\r\n    code2: number;\r\n    number: number;\r\n}"]}
