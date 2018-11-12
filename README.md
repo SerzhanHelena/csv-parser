@@ -1,6 +1,6 @@
-#csv-parser 
+# csv-parser 
 
-###This project parses csv file, stores valid data in DataBase (MySQL) and invalid files in another csv file. 
+### This project parses csv file, stores valid data in DataBase (MySQL) and invalid files in another csv file. 
 
 
 Usage: 
