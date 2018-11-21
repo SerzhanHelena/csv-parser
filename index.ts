@@ -46,10 +46,7 @@ parser.getData('../assets/Users')
 
             }
         }
-
         saveToDB(validItems);
-        let headers:Person = {Age:'Age',Name:'Name',Surname:'Surname', Time:'Time', DateOfReg:'regDate', Email:'mail', Phone:'Phone', valid:true, errors:null };
-        invalidItems.push(headers);
         saveToCSV(invalidItems);
     })
     .catch((error) => {

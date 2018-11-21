@@ -3,11 +3,11 @@
 
 export class ValidateExtentions {
 
-    public static validateLength(min:number, max:number, value:String, fieldName:string): string {
+    public static validateLength(min:number, max:number, value:string, fieldName:string): string {
         if (value.length < min || value.length > max) {
             return "Ошибка в поле " + fieldName + ". Длина поля не входит в диапазон (" + min.toString() +  "-" + max.toString() + ")";
         }
-        else return null;
+         return null;
     }
 
    public static validateRegexExpression(expression: string, value: string, fieldName: string) :string {
@@ -36,24 +36,24 @@ export class ValidateExtentions {
          if (value.length < min || value.length-2 > max) {
              return "Ошибка в поле " + fieldName + ". Длина поля не входит в диапазон (" + min.toString() + " - " + max.toString() + ")";
          }
-         else return null;
+         return null;
      }
 
-     public static validateCurrentDate (value: string, fieldName: string) {
+     public static validateCurrentDate (value: string, fieldName: string): string {
          let today = new Date();
          let dd = today.getDate();
          let mm = today.getMonth()+1; //January is 0!
          let yyyy = today.getFullYear();
 
-         value = value.replace('/','.').replace('-', '.');
+         const formatedValue = value.replace('/','.').replace('-', '.');
          // @ts-ignore
-         let valueDate = moment(value, "DD.MM.YYYY");
+         let valueDate = moment(formatedValue, "DD.MM.YYYY");
          if (!valueDate.isValid()) {
              return 'Ошибка в поле ' + fieldName + ". Неверный формат даты";
          }
 
          if (valueDate > today){
-             return 'Ошибка в поле ' + fieldName + ". Значение поля '" + value + "' не может быть больше сегодняшней даты " + today;
+             return 'Ошибка в поле ' + fieldName + ". Значение поля '" + formatedValue + "' не может быть больше сегодняшней даты " + today;
          }
          return null;
      }

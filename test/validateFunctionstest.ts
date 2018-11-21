@@ -88,8 +88,12 @@ describe('ValidateExtentions', ()=> {
     });
     // @ts-ignore
     describe('TimeValidation', ()=>{
+//AAA
+        ///Arrange
         let conf = config.csv.find(obj => obj.name === 'time');
+        //Acr
         let res:time = new time('10:00 PM', conf);
+        //Assert
         // @ts-ignore
         it('should Ошибка', function () {
             expect('22:00').to.equal(res.value);

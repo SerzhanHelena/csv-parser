@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/*.ts"
+    "test": "./node_modules/.bin/mocha --compilers ts:ts-node/register ./test/*.ts",
+    "start": "./node_modules/ts-node/dist/bin.js index.ts"
   },
   "keywords": [],
   "author": "",
